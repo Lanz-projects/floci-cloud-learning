@@ -1,0 +1,18 @@
+# Terraform providers and local state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+# Variable files can contain secrets
+*.tfvars
+*.tfvars.json
+
+# Terraform crash logs
+crash.log
+
+# .NET build output
+**/bin/
+**/obj/
+
+# Locally downloaded S3 test files
+labs01-s3/app/downloaded/
