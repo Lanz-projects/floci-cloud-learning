@@ -9,7 +9,7 @@ Floci runs AWS-compatible services locally, so I can practice cloud workflows wi
 | Lab | Status | What it covers |
 | --- | --- | --- |
 | [01 — S3](./labs01-s3/README.md) | Complete | AWS CLI S3 operations, Terraform buckets and outputs, S3 versioning, and a C# upload/list/download/delete app. |
-| 02 — SQS | Planned | Create a queue with Terraform, then send and receive messages with the AWS CLI and C#. |
+| [02 — SQS](./labs02-sqs/README.md) | Complete | Terraform-managed standard queue and dead-letter queue, AWS CLI message lifecycle and retry practice, and a C# send/receive/delete app. |
 
 Each lab has its own folder so its notes, configuration, and Terraform state are kept separate.
 
@@ -18,7 +18,9 @@ Each lab has its own folder so its notes, configuration, and Terraform state are
 1. Use the AWS CLI to understand basic service operations.
 2. Manage local cloud resources with Terraform: providers, resources, variables, outputs, plans, and state.
 3. Use the AWS SDK in C# to interact with those resources.
-4. Explore additional cloud services and concepts such as queues, databases, IAM, networking, and monitoring.
+4. Explore additional cloud services and patterns such as SNS fan-out, databases, IAM, networking, and monitoring.
+
+The next planned topic is SNS fan-out to SQS: publish one event to an SNS topic and deliver it to multiple queues.
 
 Start Floci before using a lab:
 

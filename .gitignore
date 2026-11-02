@@ -1,18 +1,39 @@
-# Terraform providers and local state
-**/.terraform/*
+# Terraform provider plugins and local cache
+**/.terraform/
+
+# Terraform state and saved plans (may contain sensitive values)
 *.tfstate
 *.tfstate.*
+*.tfplan
+*.plan
+**/tfplan
 
-# Variable files can contain secrets
+# Local variable files may contain credentials or other secrets
 *.tfvars
 *.tfvars.json
 
-# Terraform crash logs
+# Terraform crash logs and local override files
 crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-# .NET build output
+# Keep .terraform.lock.hcl tracked to pin provider selections
+
+# Local environment settings
+.env
+.env.*
+!.env.example
+
+# .NET build output and user-specific IDE files
 **/bin/
 **/obj/
+**/TestResults/
+**/.vs/
+*.suo
+*.user
 
-# Locally downloaded S3 test files
-labs01-s3/app/downloaded/
+# Files downloaded by the local S3 demo
+**/downloaded/
