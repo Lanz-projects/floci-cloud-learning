@@ -37,3 +37,6 @@ override.tf.json
 
 # Files downloaded by the local S3 demo
 **/downloaded/
+
+# Generated Lambda deployment packages
+labs05-serverless-api/app/*.zip

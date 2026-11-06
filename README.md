@@ -12,6 +12,7 @@ Floci runs AWS-compatible services locally, so I can practice cloud workflows wi
 | [02 — SQS](./labs02-sqs/README.md) | Complete | Terraform-managed standard queue and dead-letter queue, AWS CLI message lifecycle and retry practice, and a C# send/receive/delete app. |
 | [03 — SNS fan-out to SQS](./labs03-sns-fanout/README.md) | Complete | Terraform-managed SNS topic, two SQS subscribers with queue policies, AWS CLI fan-out, and a menu-driven C# publisher and consumer. |
 | [04 — DynamoDB](./labs04-dynamodb/README.md) | Complete | A Terraform-managed NoSQL orders table, AWS CLI item operations, and a menu-driven C# app using the DynamoDB SDK. |
+| [05 — Serverless orders API](./labs05-serverless-api/README.md) | Complete | Terraform-managed API Gateway HTTP API, C# Lambda, IAM permissions, and DynamoDB; tested create/read routes and 400/404 responses. |
 
 Each lab has its own folder so its notes, configuration, and Terraform state are kept separate.
 
@@ -22,7 +23,7 @@ Each lab has its own folder so its notes, configuration, and Terraform state are
 3. Use the AWS SDK in C# to interact with those resources.
 4. Continue with other cloud services and patterns such as databases, IAM, networking, monitoring, and event routing.
 
-The completed labs move from object storage (S3), to message queues (SQS), to publishing an event once and delivering independent copies through SNS to SQS. Lab 04 adds a NoSQL database, composite keys, item operations, and a C# app that creates, queries, updates, and deletes orders.
+The completed labs move from object storage (S3), to message queues (SQS), to publishing an event once and delivering independent copies through SNS to SQS. Lab 04 adds a NoSQL database, composite keys, item operations, and a C# app that creates, queries, updates, and deletes orders. Lab 05 connects API Gateway, a C# Lambda function, and DynamoDB in a serverless HTTP API with create and read routes.
 
 Start Floci before using a lab:
 
